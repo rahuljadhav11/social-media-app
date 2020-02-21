@@ -1,7 +1,9 @@
 import React from 'react';
+import "./home.scss";
 
 const Home = () => (
-  <h1>KL RAHUL</h1>
+  <div className="home">
+  </div>
 );
 
 export default Home;
