@@ -3,8 +3,11 @@
 @import "./fonts.scss";
 
 body {
-  font-family: "Futura-Regular"; 
-  font-size: 0.6875rem;
+  font-family: "Futura-Regular";
+}
+
+.ant-avatar-square {
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar {
