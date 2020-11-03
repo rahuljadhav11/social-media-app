@@ -1,0 +1,22 @@
+.background-cover {
+  .cover-images {
+    display: flex;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transition: transform .5s;
+
+    @keyframes example {
+      0%   { left: 0%; }
+      50%  { left: calc(100% - 1920px); }
+      100% { left: 0%; }
+    }
+
+    .cover {
+      margin: 2px 1px;
+    }
+  }
+}

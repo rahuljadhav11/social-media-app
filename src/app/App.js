@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from "../containers/Home";
+import Home from "../containers/PlayerInformation/Home";
 import { Layout } from "antd";
 import "antd/dist/antd.css";
 import "../css/global/app.scss";

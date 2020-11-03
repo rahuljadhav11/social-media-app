@@ -1,0 +1,47 @@
+@import "../../../css/global/variables.scss";
+@import "../../../css/global/mixins.scss";
+@import "../../../css/global/fonts.scss";
+
+.about {
+  background-color: $home2-background;
+  height: $home-height;
+  text-align: center;
+  padding-right: 37px;
+
+  .user-info {
+    padding: 60px 0;
+
+    .title {
+      @include text-formating(
+        36px,
+        $home-text-color,
+        normal,
+        "Futura-Regular",
+        2px
+      );
+    }
+
+    .info {
+      padding: 20px 0;
+      @include text-formating(
+        20px,
+        $white-color,
+        400,
+        "Futura-Regular",
+        2px
+      );
+
+      text-align: justify;
+    }
+
+    .dob {
+      @include text-formating(
+        20px,
+        $white-color,
+        500,
+        "Futura-Light",
+        2px
+      );
+    }
+  }
+}

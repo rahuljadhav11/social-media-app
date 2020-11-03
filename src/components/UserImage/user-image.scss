@@ -1,0 +1,11 @@
+@import "../../css/global/variables.scss";
+
+.user-image-left {
+  float: left;
+  height: $home-height;
+}
+
+.user-image-right {
+  float: right;
+  height: $home-height;
+}

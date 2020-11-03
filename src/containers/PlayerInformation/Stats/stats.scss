@@ -1,0 +1,65 @@
+@import "../../../css/global/variables.scss";
+@import "../../../css/global/mixins.scss";
+@import "../../../css/global/fonts.scss";
+
+.stats {
+  background-color: $home3-background;
+  height: $home-height;
+  text-align: center;
+  padding-left: 37px;
+  position: relative;
+  z-index: 1;
+
+  .table-stats {
+    .title {
+      margin: 20px 0;
+
+      @include text-formating(
+        20px,
+        $white-color,
+        normal,
+        "Futura-Regular",
+        2px
+      );
+    }
+
+    thead th {
+      background: #f5f5f5 !important;
+      font-size: 16px;
+      color: $black-color;
+    }
+
+    td {
+      font-size: 14px;
+      color: $black-color;
+    }
+
+    tbody tr {
+      pointer-events: none;
+    }
+  }
+
+  .rankings {
+    margin-bottom: 30px;
+
+    .format {
+      @include text-formating(
+        16px,
+        $home-text-color,
+        bold,
+        "Futura-bold",
+        2px
+      );
+    }
+
+    .rank {
+      @include text-formating(
+        40px,
+        $white-color,
+        bold,
+        "Futura-bold",
+        2px
+      );
+    }
+  }
+}
