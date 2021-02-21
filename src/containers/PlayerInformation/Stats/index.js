@@ -71,39 +71,39 @@ const battingStatsData = [
   },
   {
     key: 'ODI',
-    matches: '32',
-    innings: '31',
-    runs: '1239',
+    matches: '35',
+    innings: '34',
+    runs: '1332',
     highest_score: '112',
-    average: '47.65',
-    strike_rate: '87.07',
+    average: '45.93',
+    strike_rate: '87.92',
     hundreds: '4',
     double_hundreds: '0',
-    fifties: '7'
+    fifties: '8'
   },
   {
     key: 'T20I',
-    matches: '41',
-    innings: '38',
-    runs: '1461',
+    matches: '44',
+    innings: '41',
+    runs: '1542',
     highest_score: '110',
-    average: '45.66',
-    strike_rate: '146.1',
+    average: '44.06',
+    strike_rate: '144.92',
     hundreds: '2',
     double_hundreds: '0',
-    fifties: '11'
+    fifties: '12'
   },
   {
     key: 'IPL',
-    matches: '67',
-    innings: '58',
-    runs: '1977',
-    highest_score: '100',
-    average: '42.06',
-    strike_rate: '138.16',
-    hundreds: '1',
+    matches: '81',
+    innings: '72',
+    runs: '2647',
+    highest_score: '132',
+    average: '44.86',
+    strike_rate: '135.81',
+    hundreds: '2',
     double_hundreds: '0',
-    fifties: '16'
+    fifties: '21'
   },
   {
     key: 'FIRST CLASS',
@@ -138,11 +138,11 @@ const rankingStats = () => (
     <Row>
       <Col span={8}>
         <div className="format">TEST</div>
-        <div className="rank">43rd</div>
+        <div className="rank">69th</div>
       </Col>
       <Col span={8}>
         <div className="format">ODI</div>
-        <div className="rank">36th</div>
+        <div className="rank">34th</div>
       </Col>
       <Col span={8}>
         <div className="format">T20</div>

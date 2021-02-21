@@ -5,7 +5,7 @@ import "./about.scss";
 
 const about = () => (
   <div className="user-info">
-    <div className="title">LOKESH RAHUL</div>
+    <div className="title">KANNUR LOKESH RAHUL</div>
     <div className="dob">18 April 1992</div>
     <div className="info">
       Rahul rose through the ranks of Under-19 cricket and broke into the
