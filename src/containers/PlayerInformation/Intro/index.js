@@ -9,17 +9,17 @@ const menu = () => (
   <Menu mode="horizontal">
     <Item key="about">
       <Icon className="menu-icon" type="user" />
-      <a href="#about" target="_self" />
+      <a href="#about" target="_self"> </a>
       ABOUT
     </Item>
     <Item key="stats">
       <Icon className="menu-icon" type="bar-chart" />
-      <a href="#stats" target="_self" />
+      <a href="#stats" target="_self"> </a>
       STATS
     </Item>
     <Item key="media">
       <Icon className="menu-icon" type="video-camera" />
-      <a href="#media" target="_self" />
+      <a href="#media" target="_self"> </a>
       MEDIA
     </Item>
   </Menu>
