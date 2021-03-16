@@ -1,7 +1,5 @@
 import React from "react";
 import { Avatar, Popover, Card } from "antd";
-// import ReactPlayer from 'react-player';
-// import UserImage from "../../../components/UserImage";
 import "./storyline.scss";
 
 const StoryLine = () => {
@@ -51,12 +49,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=bgSCp9k4IKs"
-        /> */}
       </div>
     </Card>
   );
@@ -107,12 +99,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=vZ2G8B-ssnc"
-        /> */}
       </div>
     </Card>
   );
@@ -164,12 +150,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=IuWJEzj5ya8"
-        /> */}
       </div>
     </Card>
   );
@@ -221,12 +201,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=JFXdf36J3H4"
-        /> */}
       </div>
     </Card>
   );
@@ -277,12 +251,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=JFXdf36J3H4"
-        /> */}
       </div>
     </Card>
   );
@@ -334,12 +302,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=JFXdf36J3H4"
-        /> */}
       </div>
     </Card>
   );
@@ -391,12 +353,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=JFXdf36J3H4"
-        /> */}
       </div>
     </Card>
   );
@@ -450,12 +406,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=JFXdf36J3H4"
-        /> */}
       </div>
     </Card>
   );
@@ -509,12 +459,6 @@ const StoryLine = () => {
           shape="square"
           size={192}
         />
-        {/* <ReactPlayer
-          className="image"
-          width="192px"
-          height="192px"
-          url="https://www.youtube.com/watch?v=JFXdf36J3H4"
-        /> */}
       </div>
     </Card>
   );

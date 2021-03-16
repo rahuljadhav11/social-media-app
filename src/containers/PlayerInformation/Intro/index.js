@@ -7,20 +7,19 @@ const { Item } = Menu;
 
 const menu = () => (
   <Menu mode="horizontal">
-    <Item key="intro">
-      <Icon className="menu-icon" type="home" />
-      HOME
-    </Item>
     <Item key="about">
       <Icon className="menu-icon" type="user" />
+      <a href="#about" target="_self" />
       ABOUT
     </Item>
     <Item key="stats">
       <Icon className="menu-icon" type="bar-chart" />
+      <a href="#stats" target="_self" />
       STATS
     </Item>
     <Item key="media">
       <Icon className="menu-icon" type="video-camera" />
+      <a href="#media" target="_self" />
       MEDIA
     </Item>
   </Menu>

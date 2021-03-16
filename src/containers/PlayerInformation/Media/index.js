@@ -8,8 +8,8 @@ const { Fragment } = React;
 const Media = () => {
   const [hoveredVideo, setHoveredVideo] = useState(false);
 
-  const videosPerRow = () =>
-    ["kl2", "kl3", "kl4", "kl5"].map(id => {
+  const videosPerRow = imageNames =>
+    imageNames.map(id => {
       return (
         <Col span={6} key={id}>
           <ReactPlayer
@@ -40,112 +40,16 @@ const Media = () => {
         </Col>
       </Row>
       <Row gutter={16} style={{ paddingTop: "20px", paddingBottom: "20px" }}>
-        {videosPerRow()}
+        {videosPerRow(["kl2", "kl3", "kl4", "kl5"])}
+      </Row>
+      <Row gutter={16} style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+        {videosPerRow(["kl6", "kl7", "kl8", "kl9"])}
+      </Row>
+      <Row gutter={16} style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+        {videosPerRow(["kl10", "kl11", "kl12", "kl13"])}
       </Row>
     </Fragment>
   );
-
-  const renderYoutubeVideosSet1 = () => (
-    <Fragment>
-      <Row gutter={16} style={{ paddingTop: "20px", paddingBottom: "20px" }}>
-        <Col span={6} id="youtube1">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube1"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=R3fRIgNOdio"
-            onMouseEnter={event => setHoveredVideo("youtube1")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-        <Col span={6} id="youtube2">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube2"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=IzC9EzDNL50"
-            onMouseEnter={event => setHoveredVideo("youtube2")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-        <Col span={6} id="youtube3">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube3"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=GT1Fclodfjk"
-            onMouseEnter={event => setHoveredVideo("youtube3")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-        <Col span={6} id="youtube4">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube4"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=V7FyDVmZcwQ"
-            onMouseEnter={event => setHoveredVideo("youtube4")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-      </Row>
-    </Fragment>
-  )
-
-  const renderYoutubeVideosSet2 = () => (
-    <Fragment>
-      <Row gutter={16} style={{ paddingTop: "20px", paddingBottom: "20px" }}>
-        <Col span={6} id="youtube1">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube1"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=MOev7psnUhs"
-            onMouseEnter={event => setHoveredVideo("youtube1")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-        <Col span={6} id="youtube2">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube2"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=-2y1RUzwAS0"
-            onMouseEnter={event => setHoveredVideo("youtube2")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-        <Col span={6} id="youtube3">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube3"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=ET567IvUTCA"
-            onMouseEnter={event => setHoveredVideo("youtube3")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-        <Col span={6} id="youtube4">
-          <ReactPlayer
-            controls={hoveredVideo === "youtube4"}
-            className="video"
-            width="100%"
-            height="250px"
-            url="https://www.youtube.com/watch?v=nL9KqGaPHHE"
-            onMouseEnter={event => setHoveredVideo("youtube4")}
-            onMouseLeave={event => setHoveredVideo(null)}
-          />
-        </Col>
-      </Row>
-    </Fragment>
-  )
 
   return (
     <Row id="media" className="media">
@@ -153,8 +57,6 @@ const Media = () => {
         MEDIA
       </div>
       {renderVideos()}
-      {renderYoutubeVideosSet1()}
-      {renderYoutubeVideosSet2()}
     </Row>
   );
 };
